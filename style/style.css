@@ -18,6 +18,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+
 }
 
 img,
@@ -53,12 +55,15 @@ table {
 /* リセットCSS おわり */
 
 #header {
-height: 100px;
-background-color:rgba(0,0,0,80%);
-color: #fff;
-display: flex;
-align-items: center;
-padding: 0px 40px;
+  width: 100%;
+  height: 100px;
+  background-color:rgba(0,0,0,80%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  position: fixed;
+  z-index: 2; /* ヘッダーを前面に表示 */
 
 }
 
@@ -95,6 +100,30 @@ padding: 10px 15px;
   border: 1px solid #fff;
   padding: 10px 15px;
   margin-left: 15px;
+
+}
+
+
+.keyVisual{
+  width: 100%;
+  height: 768px;
+  background-color: #78781E;
+  background-image: url("kv-1.jpg");
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  position: absolute;
+  z-index: 1; /* ヘッダーを前面に表示 */
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.keyVisualLogo {
+  width: 182.02px;
+  margin-left: 150px;
+  padding-top: 269px;
 
 }
 
