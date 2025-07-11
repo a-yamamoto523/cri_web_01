@@ -14,7 +14,7 @@
 
 html,
 body {
-  font-family: sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -67,6 +67,12 @@ table {
 
 }
 
+#main {
+  width: 100%;
+  position: absolute;
+  z-index: 1; /* ヘッダーを前面に表示 */
+}
+
 .headerLogo {
   width: 135px;
 }
@@ -111,8 +117,6 @@ padding: 10px 15px;
   background-image: url("kv-1.jpg");
   background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
   background-size: cover;
-  position: absolute;
-  z-index: 1; /* ヘッダーを前面に表示 */
   top: 0;
   right: 0;
   left: 0;
@@ -125,5 +129,31 @@ padding: 10px 15px;
   margin-left: 150px;
   padding-top: 269px;
 
+}
+
+.contentsBox01{
+  width: 100%;
+  height: 2479px;
+  background-color: black;
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.contentsBox01Textwrap01{
+  display: flex;
+  justify-content: center;
+  padding-top: 296px;
+}
+
+.contentsBox01Text01{
+  font-size: 48px;
+  line-height: 1.7;
+  letter-spacing: 0.5em;
+  writing-mode: vertical-rl;
+  text-align: left;
 }
 
