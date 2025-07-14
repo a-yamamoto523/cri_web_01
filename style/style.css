@@ -97,8 +97,8 @@ table {
 }
 
 .reservationButton{
-background-color: #78781E;
-padding: 10px 15px;
+ background-color: #78781E;
+ padding: 10px 15px;
 
 }
 
@@ -114,7 +114,7 @@ padding: 10px 15px;
   width: 100%;
   height: 768px;
   background-color: #78781E;
-  background-image: url("kv-1.jpg");
+  background-image: url("../img/re-KV-1.jpg");
   background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
   background-size: cover;
   top: 0;
@@ -133,10 +133,13 @@ padding: 10px 15px;
 
 .contentsBox01{
   width: 100%;
-  height: 2479px;
-  background-color: black;
+  background-image: url("../img/main_bg.jpg");
   background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
   background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
   color: #fff;
   text-align: center;
   margin: 0 auto;
@@ -157,3 +160,133 @@ padding: 10px 15px;
   text-align: left;
 }
 
+.contentsBox01Text02 {
+  font-size: 14px;
+  line-height: 2.8;
+}
+
+.contentsBox01Visual{
+  margin: 80px auto 0px auto;
+  width: 1177px;
+}
+
+.contentsBox01Movie{
+  margin-top: 80px;
+  padding-bottom: 100px;
+
+}
+
+
+.contentsBox02{
+  text-align: center;
+}
+
+.contentsBox02Title{
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 100px;
+  line-height: 150%;
+}
+
+.contentsBox02sub{
+  font-size: 16px;
+  color: #828282;
+  margin-top: 10px;
+  line-height: 150%;
+  letter-spacing: 30%;
+}
+
+
+.contentsBox02Table{
+  width: 1000px;
+  margin: 55px auto 0px auto;
+
+
+}
+
+.TableRaw{
+  height: 57px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+   border-top:solid 1.5px #ccc;
+  border-bottom:solid 1.5px #ccc;
+
+}
+
+.tableDate01{
+  width: 100px;
+  display: inline-block;
+  background-color: #78781E;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tableDate02{
+  width: 108px;
+  text-align: center;
+  color: #888888;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.tableDate03{
+  display: inline-block;
+  margin-left: 50px;
+}
+
+
+.contentsBox03{
+  text-align: center;
+  background-color: #E8E7E2 ;
+}
+
+.contentsBox03wrap01{
+  display: flex;
+  justify-content: center;
+}
+
+.imageTextBox01{
+  width: 480px;
+  height: 562px;
+  
+}
+
+.Box01Contents{
+  text-align: left;
+  background-color: #fff;
+  padding: 18px 13px;
+}
+
+.imageTextBox02{
+  width: 480px;
+  height: 562px;
+  text-align: left;
+  background-color: #fff;
+  padding: 18px 13px;
+  margin-left:40px ;
+  
+}
+
+.imageTextBoxTitle{
+  font-size: 16px;
+  color: #78781E;
+  text-align: left;
+}
+
+.imageTextBoxDescription{
+  font-size: 14px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+
+.cta01{
+  font-size: 13px;
+  color: #868686;
+  text-align: right;
+  margin-top: 10px;
+
+}
