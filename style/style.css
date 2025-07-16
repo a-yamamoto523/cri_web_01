@@ -179,12 +179,12 @@ table {
 
 .contentsBox02{
   text-align: center;
+  padding: 100px 0 135px 0;
 }
 
 .contentsBox02Title{
   font-size: 36px;
   font-weight: bold;
-  margin-top: 100px;
   line-height: 150%;
 }
 
@@ -200,15 +200,13 @@ table {
 .contentsBox02Table{
   width: 1000px;
   margin: 55px auto 0px auto;
-
-
 }
 
 .TableRaw{
   height: 57px;
   margin-top: 20px;
   margin-bottom: 20px;
-   border-top:solid 1.5px #ccc;
+  border-top:solid 1.5px #ccc;
   border-bottom:solid 1.5px #ccc;
 
 }
@@ -241,6 +239,7 @@ table {
 .contentsBox03{
   text-align: center;
   background-color: #E8E7E2 ;
+  padding: 100px 0px 0px 0px;
 }
 
 .contentsBox03wrap01{
@@ -251,6 +250,7 @@ table {
 .imageTextBox01{
   width: 480px;
   height: 562px;
+  margin-top: 55px;
   
 }
 
@@ -263,9 +263,7 @@ table {
 .imageTextBox02{
   width: 480px;
   height: 562px;
-  text-align: left;
-  background-color: #fff;
-  padding: 18px 13px;
+  margin-top: 55px;
   margin-left:40px ;
   
 }
@@ -288,5 +286,170 @@ table {
   color: #868686;
   text-align: right;
   margin-top: 10px;
+}
 
+.recommend01{
+  width: 800px;
+  margin: 80px auto 50px auto;
+}
+
+.recommend01Title{
+  font-size: 22px;
+  color: #78781E;
+  font-weight: 400;
+  
+}
+
+.recommend01Line{
+  border-top: 1px solid #000;
+  margin-top: 9px;
+}
+
+.recommend01Text01{
+  margin: 30px auto;
+	text-align: center;
+	display: block;
+}
+
+
+.small{
+  text-align: left;
+  display: inline-block;
+  color: #222;
+  font-size: 10px;
+}
+
+.ctaWrap{
+  display: flex;
+}
+
+.ctaWrapCta01{
+  width: 50%;
+  background-color: #78781E;
+  color: #fff;
+  padding: 30px 0px;
+
+}
+
+.ctaText01{
+  font-size: 10px;
+}
+
+.ctaText02{
+  font-size: 28px;
+}
+
+.ctaWrapCta02{
+  width: 50%;
+  background-color: #454545;
+  color: #fff;
+  padding: 30px 0px;
+}
+
+.ctaText03{
+ font-size: 22px;
+}
+
+
+.service01{
+  width: 100%;
+  background-image: url("../img/nature 1.jpg");
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  margin: 15px auto;
+  padding: 150px 0px;
+}
+
+
+.serviceTitle01{
+  font-size: 48px;
+  font-weight: 400;
+
+}
+
+.serviceTitle02{
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.serviceText{
+  font-size: 24px;
+  margin-top: 55px;
+}
+
+.service02{
+  width: 100%;
+  background-image: url("../img/room 1.jpg");
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  margin: 15px auto;
+  padding: 150px 0px;
+}
+
+.service03{
+  width: 100%;
+  background-image: url("../img/food 1.jpg");
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  margin: 15px auto;
+  padding: 150px 0px;
+}
+
+.service04{
+  width: 100%;
+  background-image: url("../img/onsen 1.jpg");
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  margin: 15px auto;
+  padding: 150px 0px;
+}
+
+.map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 37.96%;    /*16:9の比率にしたい場合、9/16=56.25%*/
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mapButtonBox{
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.mapButton01{
+  
 }
