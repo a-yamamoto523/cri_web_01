@@ -71,6 +71,7 @@ table {
   width: 100%;
   position: absolute;
   z-index: 1; /* ヘッダーを前面に表示 */
+  
 }
 
 .headerLogo {
@@ -446,10 +447,31 @@ table {
 .mapButtonBox{
   display: flex;
   text-align: center;
-  margin: 0 auto;
+  margin: 30px auto 0px auto;
+  justify-content: center
 }
 
 
 .mapButton01{
-  
+  width: 235px;
+  height: 60px;
+  background-color:#a8a7a7 ;
+  padding: 20px;
+  font-size: 13.5px;
+  color: #fff;
+
 }
+
+.mapButton02{
+  width: 235px;
+  height: 60px;
+  background-color:#222 ;
+  padding: 20px;
+  font-size: 13.5px;
+  color: #fff;
+  margin-left: 20px ;
+
+}
+
+
+
