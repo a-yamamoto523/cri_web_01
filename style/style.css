@@ -63,13 +63,14 @@ table {
   align-items: center;
   padding: 0px 40px;
   position: fixed;
+  top: 0px;
   z-index: 2; /* ヘッダーを前面に表示 */
+  
 
 }
 
 #main {
   width: 100%;
-  position: absolute;
   z-index: 1; /* ヘッダーを前面に表示 */
   
 }
@@ -447,29 +448,35 @@ table {
 .mapButtonBox{
   display: flex;
   text-align: center;
-  margin: 30px auto 0px auto;
+  margin-top: 50px;
   justify-content: center
 }
 
 
 .mapButton01{
-  width: 235px;
-  height: 60px;
   background-color:#a8a7a7 ;
-  padding: 20px;
+  padding: 20px 55px;
   font-size: 13.5px;
   color: #fff;
 
 }
 
 .mapButton02{
-  width: 235px;
-  height: 60px;
   background-color:#222 ;
-  padding: 20px;
+  padding: 20px 55px;
   font-size: 13.5px;
   color: #fff;
   margin-left: 20px ;
+
+}
+
+#footer {
+  width: 100%;
+  height: 720px;
+  align-items: center;
+  padding: 0px 40px;
+  z-index: 2; /* ヘッダーを前面に表示 */
+  margin-top: 150px;
 
 }
 
