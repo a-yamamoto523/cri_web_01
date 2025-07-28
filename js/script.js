@@ -24,3 +24,22 @@ console.log(mikan);
 const navigationItem =document.querySelectorAll('.navigationItem'); 
 console.log(navigationItem[4]);
 
+//element.textContent = 'こんにちは';    // テキストだけ変える
+//element.innerHTML = '<b>強調</b>';    // HTMLも含めて変更
+
+
+
+// element.addEventListener('click', () => {
+//   // クリックされたときの処理
+// });
+
+
+//予約ボタンをクリックする→温泉がヤーになる
+//予約ボタンを取得→クリックイベントを用意する
+
+const reservationButton = document.querySelector('.reservationButton');
+console.log(reservationButton);
+reservationButton.addEventListener('click', () => {
+    navigationItem[4].textContent = "ヤー";
+  // クリックされたときの処理
+});
