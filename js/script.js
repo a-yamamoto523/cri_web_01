@@ -43,3 +43,28 @@ reservationButton.addEventListener('click', () => {
     navigationItem[4].textContent = "ヤー";
   // クリックされたときの処理
 });
+
+//空室カレンダーをクリックする→交通がニャーになる
+//空室カレンダーを取得→クリックイベントを用意する
+
+
+const calenderButton = document.querySelector('.calenderButton');
+const mainHeading = document.querySelector('.contentsBox01Text01');
+const image =document.querySelector('.test');
+image.getAttribute('src');
+
+calenderButton.addEventListener('click', () => {
+  navigationItem[5].textContent = "ニャー";
+  mainHeading.classList.toggle('active');
+  navigationItem[4].style.color = 'red';
+  navigationItem[2].style.display = 'none';
+  image.setAttribute('src', '../img/food 1.jpg');    // 属性を変更
+
+});
+
+// element.classList.add('active');       // クラスを追加(→CSS追加)
+// element.classList.remove('hidden');    // クラスを削除
+// element.classList.toggle('open');      // ある/なしを切り替え
+// element.classList.contains('done');    // 含んでいるかチェック（true/false）
+
+

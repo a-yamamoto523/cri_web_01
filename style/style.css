@@ -162,6 +162,11 @@ table {
   text-align: left;
 }
 
+.contentsBox01Text01.active{
+  color: #78781E;
+
+}
+
 .contentsBox01Text02 {
   font-size: 14px;
   line-height: 2.8;
