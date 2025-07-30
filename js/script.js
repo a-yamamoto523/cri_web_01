@@ -104,11 +104,13 @@ console.log(closeBtn);
 
 closeBtn[0].addEventListener('click', () => {
     modal01.classList.remove('active');
+    body.classList.remove('active');
   // クリックされたときの処理
 });
 
 closeBtn[1].addEventListener('click', () => {
     modal02.classList.remove('active');
+    body.classList.remove('active');
   // クリックされたときの処理
 });
 
