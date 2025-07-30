@@ -22,6 +22,11 @@ body {
 
 }
 
+body.active{
+  overflow: hidden;
+}
+
+
 img,
 picture,
 video,
@@ -247,6 +252,7 @@ table {
   text-align: center;
   background-color: #E8E7E2 ;
   padding: 100px 0px 0px 0px;
+  position: relative;
 }
 
 .contentsBox03wrap01{
@@ -273,6 +279,62 @@ table {
   margin-top: 55px;
   margin-left:40px ;
   
+}
+
+.modal01{
+  display: none;
+}
+
+.modalContent01{
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.modal01.active{
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  position: fixed;
+  top:0;
+  left: 0;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  width: 100vw; /* ウィンドウ幅 */
+  height: 100vh; /* ウィンドウ高さ */
+
+}
+
+
+.modal02{
+  display: none;
+}
+
+.modal02.active{
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  position: fixed;
+  top:0;
+  left: 0;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  width: 100vw; /* ウィンドウ幅 */
+  height: 100vh; /* ウィンドウ高さ */
+  
+}
+
+.modalContent02{
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.closeBtn{
+  width: 7%;
+  position: absolute;
+  right: 0px;
+  top: -35px;
 }
 
 .imageTextBoxTitle{

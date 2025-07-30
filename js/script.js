@@ -62,9 +62,59 @@ calenderButton.addEventListener('click', () => {
 
 });
 
+
+
 // element.classList.add('active');       // クラスを追加(→CSS追加)
 // element.classList.remove('hidden');    // クラスを削除
 // element.classList.toggle('open');      // ある/なしを切り替え
 // element.classList.contains('done');    // 含んでいるかチェック（true/false）
+
+
+// imageTextBox01,02をクリック→モーダルを表示
+// モーダルはHTMLで準備？
+// HTMLでモーダル準備→cssでdisplay:none→取得/imageTextBox01,02にクリックイベントを用意→クラスを追加または削除み
+// Jsでモーダルのバツマーク取得、クリックイベント
+
+// popup01
+
+const popup01 =document.querySelector('.popup01'); 
+const modal01 =document.querySelector('.modal01'); 
+const body =document.getElementById('body');
+
+popup01.addEventListener('click', () => {
+    modal01.classList.add('active'); 
+    body.classList.add('active');
+  // クリックされたときの処理
+});
+
+
+const popup02 =document.querySelector('.popup02'); 
+const modal02 =document.querySelector('.modal02'); 
+
+
+popup02.addEventListener('click', () => {
+    modal02.classList.add('active'); 
+    body.classList.add('active');
+  // クリックされたときの処理
+});
+
+const closeBtn = document.querySelectorAll('.closeBtn');
+console.log(closeBtn);
+
+
+closeBtn[0].addEventListener('click', () => {
+    modal01.classList.remove('active');
+  // クリックされたときの処理
+});
+
+closeBtn[1].addEventListener('click', () => {
+    modal02.classList.remove('active');
+  // クリックされたときの処理
+});
+
+
+
+
+
 
 
