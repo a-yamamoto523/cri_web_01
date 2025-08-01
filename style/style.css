@@ -19,6 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  padding-bottom: 162px;
 
 }
 
@@ -69,14 +70,13 @@ table {
   padding: 0px 40px;
   position: fixed;
   top: 0px;
-  z-index: 2; /* ヘッダーを前面に表示 */
+  z-index: 1; /* ヘッダーを前面に表示 */
   
 
 }
 
 #main {
   width: 100%;
-  z-index: 1; /* ヘッダーを前面に表示 */
   
 }
 
@@ -250,7 +250,7 @@ table {
 
 .contentsBox03{
   text-align: center;
-  background-color: #E8E7E2 ;
+  background-color: #DDDDDD ;
   padding: 100px 0px 0px 0px;
   position: relative;
 }
@@ -286,7 +286,7 @@ table {
 }
 
 .modalContent01{
-  width: 30%;
+  width: 450px;
   margin: 0 auto;
   position: relative;
 
@@ -302,6 +302,7 @@ table {
   align-items: center; /* 垂直方向の中央揃え */
   width: 100vw; /* ウィンドウ幅 */
   height: 100vh; /* ウィンドウ高さ */
+  z-index: 2;
 
 }
 
@@ -320,18 +321,21 @@ table {
   align-items: center; /* 垂直方向の中央揃え */
   width: 100vw; /* ウィンドウ幅 */
   height: 100vh; /* ウィンドウ高さ */
+  z-index: 2;
   
 }
 
 .modalContent02{
-  width: 30%;
+  width: 450px;
   margin: 0 auto;
   position: relative;
 
 }
 
+
+
 .closeBtn{
-  width: 7%;
+  width: 25px;
   position: absolute;
   right: 0px;
   top: -35px;
@@ -538,14 +542,93 @@ table {
 }
 
 #footer {
-  width: 100%;
-  height: 720px;
+  width: 1050px;
   align-items: center;
-  padding: 0px 40px;
-  z-index: 2; /* ヘッダーを前面に表示 */
-  margin-top: 150px;
+  padding: 0px auto;
+  margin: 150px auto 0px auto;
+  text-align: center;
 
 }
+
+
+.footerWrap01{
+  display: flex;
+  align-items: center;
+}
+
+.fooerImage{
+  width: 590px;
+  
+}
+
+
+
+.imageTextBox03{
+  width: 262px;
+  margin-left: 200px;
+
+}
+
+
+.footerLogo{
+   width: 230px;
+}
+
+.footerInfomersion{
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.footerNavigation{
+  margin-top: 100px;
+}
+
+.footerNavigation ul{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.footerNavigation li+li{
+  border-left: 2px solid #ccc; /* 区切り線 */
+}
+
+.footerNavigation a{
+  display: block;
+  padding: 0 50px;
+  border-right: none;
+  text-decoration: none;
+  color: #333;
+}
+
+.footerBannerBox{
+  display: flex;
+  gap: 20px;
+  height: 50px;
+  margin-top: 55px;
+
+}
+
+.copyRight{
+  margin-top: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
