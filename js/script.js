@@ -53,14 +53,37 @@ const mainHeading = document.querySelector('.contentsBox01Text01');
 const image =document.querySelector('.test');
 image.getAttribute('src');
 
-calenderButton.addEventListener('click', () => {
-  navigationItem[5].textContent = "ニャー";
-  mainHeading.classList.toggle('active');
-  navigationItem[4].style.color = 'red';
-  navigationItem[2].style.display = 'none';
-  image.setAttribute('src', '../img/food 1.jpg');    // 属性を変更
+let isBeforeState = true;
 
+calenderButton.addEventListener('click', () => {
+
+   mainHeading.classList.toggle('active');
+
+  if (isBeforeState) {
+        // 現在が「変更前」の状態なら「変更後」に切り替える
+          navigationItem[5].textContent = "ニャー";
+          navigationItem[4].style.color = 'red';
+          navigationItem[2].style.display = 'none';
+          image.setAttribute('src', '../img/food 1.jpg');    // 属性を変更
+          } else {
+          // 現在が「変更後」の状態なら「変更前」に切り替える
+          navigationItem[5].textContent = '交通';
+          navigationItem[4].style.color = '#fff';
+          navigationItem[2].style.display = 'block';
+          image.setAttribute('src', '../img/main_img01 1.jpg');    // 属性を変更
+        
+    }
+
+     isBeforeState = !isBeforeState; 
+    
+  
 });
+
+
+
+
+
+
 
 
 
@@ -98,21 +121,18 @@ popup02.addEventListener('click', () => {
   // クリックされたときの処理
 });
 
-const closeBtn = document.querySelectorAll('.closeBtn');
+const closeBtn = document.getElementById('closeBtn');
 console.log(closeBtn);
 
 
-closeBtn[0].addEventListener('click', () => {
+closeBtn.addEventListener('click', () => {
     modal01.classList.remove('active');
     body.classList.remove('active');
   // クリックされたときの処理
 });
 
-closeBtn[1].addEventListener('click', () => {
-    modal02.classList.remove('active');
-    body.classList.remove('active');
-  // クリックされたときの処理
-});
+
+
 
 
 

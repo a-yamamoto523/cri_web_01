@@ -96,6 +96,8 @@ table {
 
 }
 
+
+
 .hederButtonWrap {
   font-size: 18px;
   display: flex;
@@ -267,6 +269,21 @@ table {
   
 }
 
+.popup01:hover img{
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition-duration: 0.5s;
+
+}
+
+.popup02:hover img{
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition-duration: 0.5s;
+
+}
+
+
 .Box01Contents{
   text-align: left;
   background-color: #fff;
@@ -334,7 +351,7 @@ table {
 
 
 
-.closeBtn{
+#closeBtn{
   width: 25px;
   position: absolute;
   right: 0px;
