@@ -214,16 +214,21 @@ table {
 .contentsBox02Table{
   width: 1000px;
   margin: 55px auto 0px auto;
+  text-align: left;
 }
 
-.TableRaw{
-  height: 57px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.tableRaw01{
   border-top:solid 1.5px #ccc;
   border-bottom:solid 1.5px #ccc;
 
 }
+
+.tableRaw02{
+  border-bottom:solid 1.5px #ccc;
+
+}
+
+
 
 .tableDate01{
   width: 100px;
@@ -247,6 +252,11 @@ table {
 .tableDate03{
   display: inline-block;
   margin-left: 50px;
+}
+
+.tableDate03:hover{
+  color: #78781E;
+  font-weight: 600;
 }
 
 
@@ -351,7 +361,7 @@ table {
 
 
 
-#closeBtn{
+.closeBtn{
   width: 25px;
   position: absolute;
   right: 0px;
@@ -371,11 +381,17 @@ table {
 }
 
 
-.cta01{
-  font-size: 13px;
+.button01{
+  font-size: 14px;
   color: #868686;
   text-align: right;
   margin-top: 10px;
+  
+}
+
+.button01:hover{
+    color: #78781E; /* 文字色を変更する */
+    font-weight: 600;
 }
 
 .recommend01{

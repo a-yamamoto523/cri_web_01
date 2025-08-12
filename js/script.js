@@ -103,6 +103,8 @@ calenderButton.addEventListener('click', () => {
 const popup01 =document.querySelector('.popup01'); 
 const modal01 =document.querySelector('.modal01'); 
 const body =document.getElementById('body');
+const button01 =document.querySelectorAll('.button01'); 
+
 
 popup01.addEventListener('click', () => {
     modal01.classList.add('active'); 
@@ -121,13 +123,31 @@ popup02.addEventListener('click', () => {
   // クリックされたときの処理
 });
 
-const closeBtn = document.getElementById('closeBtn');
-console.log(closeBtn);
+const closeBtn = document.querySelectorAll('.closeBtn');
 
 
-closeBtn.addEventListener('click', () => {
+closeBtn[0].addEventListener('click', () => {
     modal01.classList.remove('active');
     body.classList.remove('active');
+  // クリックされたときの処理
+});
+
+closeBtn[1].addEventListener('click', () => {
+    modal01.classList.remove('active');
+    body.classList.remove('active');
+  // クリックされたときの処理
+});
+
+button01[1].addEventListener('click', () => {
+    modal01.classList.add('active'); 
+    body.classList.add('active');
+  // クリックされたときの処理
+});
+
+
+button01[2].addEventListener('click', () => {
+    modal02.classList.add('active'); 
+    body.classList.add('active');
   // クリックされたときの処理
 });
 
