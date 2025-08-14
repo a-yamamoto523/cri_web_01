@@ -133,7 +133,7 @@ closeBtn[0].addEventListener('click', () => {
 });
 
 closeBtn[1].addEventListener('click', () => {
-    modal01.classList.remove('active');
+    modal02.classList.remove('active');
     body.classList.remove('active');
   // クリックされたときの処理
 });
