@@ -1,0 +1,667 @@
+@charset "UTF-8";
+
+/* 
+以下のCSSは「リセットCSS」といいます。
+各ブラウザには最初から一部CSSの値が設定されており、それをリセットして見栄えを統一するために使われます。
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  padding-bottom: 162px;
+
+}
+
+body.active{
+  overflow: hidden;
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* リセットCSS おわり */
+
+#header {
+  width: 100%;
+  height: 100px;
+  background-color:rgba(0,0,0,80%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  position: fixed;
+  top: 0px;
+  z-index: 1; /* ヘッダーを前面に表示 */
+  
+
+}
+
+#main {
+  width: 100%;
+  
+}
+
+.headerLogo {
+  width: 135px;
+}
+
+
+.headerNavigation{
+  margin-left: 55px;
+}
+
+.navigationBox {
+  font-size: 16px;
+  display: flex;
+  gap: 48px;
+
+}
+
+
+
+.hederButtonWrap {
+  font-size: 18px;
+  display: flex;
+  margin-left: auto;
+ 
+}
+
+.reservationButton{
+ background-color: #78781E;
+ padding: 10px 15px;
+
+}
+
+.calenderButton{
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  margin-left: 15px;
+
+}
+
+
+.keyVisual{
+  width: 100%;
+  height: 768px;
+  background-color: #78781E;
+  background-image: url("../img/re-KV-1.jpg");
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.keyVisualLogo {
+  width: 182.02px;
+  margin-left: 150px;
+  padding-top: 269px;
+
+}
+
+.contentsBox01{
+  width: 100%;
+  background-image: url("../img/main_bg.jpg");
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.contentsBox01Textwrap01{
+  display: flex;
+  justify-content: center;
+  padding-top: 296px;
+}
+
+.contentsBox01Text01{
+  font-size: 48px;
+  line-height: 1.7;
+  letter-spacing: 0.5em;
+  writing-mode: vertical-rl;
+  text-align: left;
+}
+
+.contentsBox01Text01.active{
+  color: #78781E;
+
+}
+
+.contentsBox01Text02 {
+  font-size: 14px;
+  line-height: 2.8;
+}
+
+.contentsBox01Visual{
+  margin: 80px auto 0px auto;
+  width: 1177px;
+}
+
+.contentsBox01Movie{
+  margin-top: 80px;
+  padding-bottom: 100px;
+
+}
+
+
+.contentsBox02{
+  text-align: center;
+  padding: 100px 0 135px 0;
+}
+
+.contentsBox02Title{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+.contentsBox02sub{
+  font-size: 16px;
+  color: #828282;
+  margin-top: 10px;
+  line-height: 150%;
+  letter-spacing: 30%;
+}
+
+
+.contentsBox02Table{
+  width: 1000px;
+  margin: 55px auto 0px auto;
+  text-align: left;
+}
+
+.tableRaw01{
+  border-top:solid 1.5px #ccc;
+  border-bottom:solid 1.5px #ccc;
+
+}
+
+.tableRaw02{
+  border-bottom:solid 1.5px #ccc;
+
+}
+
+
+
+.tableDate01{
+  width: 100px;
+  display: inline-block;
+  background-color: #78781E;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tableDate02{
+  width: 108px;
+  text-align: center;
+  color: #888888;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.tableDate03{
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.tableDate03:hover{
+  color: #78781E;
+  font-weight: 600;
+}
+
+
+.contentsBox03{
+  text-align: center;
+  background-color: #DDDDDD ;
+  padding: 100px 0px 0px 0px;
+  position: relative;
+}
+
+.contentsBox03wrap01{
+  display: flex;
+  justify-content: center;
+}
+
+.imageTextBox01{
+  width: 480px;
+  height: 562px;
+  margin-top: 55px;
+  
+}
+
+.popup01:hover img{
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition-duration: 0.5s;
+
+}
+
+.popup02:hover img{
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition-duration: 0.5s;
+
+}
+
+
+.Box01Contents{
+  text-align: left;
+  background-color: #fff;
+  padding: 18px 13px;
+}
+
+.imageTextBox02{
+  width: 480px;
+  height: 562px;
+  margin-top: 55px;
+  margin-left:40px ;
+  
+}
+
+.modal01{
+  display: none;
+}
+
+.modalContent01{
+  width: 450px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.modal01.active{
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  position: fixed;
+  top:0;
+  left: 0;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  width: 100vw; /* ウィンドウ幅 */
+  height: 100vh; /* ウィンドウ高さ */
+  z-index: 2;
+
+}
+
+
+.modal02{
+  display: none;
+}
+
+.modal02.active{
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  position: fixed;
+  top:0;
+  left: 0;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  width: 100vw; /* ウィンドウ幅 */
+  height: 100vh; /* ウィンドウ高さ */
+  z-index: 2;
+  
+}
+
+.modalContent02{
+  width: 450px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+
+
+.closeBtn{
+  width: 25px;
+  position: absolute;
+  right: 0px;
+  top: -35px;
+}
+
+.imageTextBoxTitle{
+  font-size: 16px;
+  color: #78781E;
+  text-align: left;
+}
+
+.imageTextBoxDescription{
+  font-size: 14px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+
+.button01{
+  font-size: 14px;
+  color: #868686;
+  text-align: right;
+  margin-top: 10px;
+  
+}
+
+.button01:hover{
+    color: #78781E; /* 文字色を変更する */
+    font-weight: 600;
+}
+
+.recommend01{
+  width: 800px;
+  margin: 80px auto 50px auto;
+}
+
+.recommend01Title{
+  font-size: 22px;
+  color: #78781E;
+  font-weight: 400;
+  
+}
+
+.recommend01Line{
+  border-top: 1px solid #000;
+  margin-top: 9px;
+}
+
+.recommend01Text01{
+  margin: 30px auto;
+	text-align: center;
+	display: block;
+}
+
+
+.small{
+  text-align: left;
+  display: inline-block;
+  color: #222;
+  font-size: 10px;
+}
+
+.ctaWrap{
+  display: flex;
+}
+
+.ctaWrapCta01{
+  width: 50%;
+  background-color: #78781E;
+  color: #fff;
+  padding: 30px 0px;
+
+}
+
+.ctaText01{
+  font-size: 10px;
+}
+
+.ctaText02{
+  font-size: 28px;
+}
+
+.ctaWrapCta02{
+  width: 50%;
+  background-color: #454545;
+  color: #fff;
+  padding: 30px 0px;
+}
+
+.ctaText03{
+ font-size: 22px;
+}
+
+
+.service01{
+  width: 100%;
+  background-image: url("../img/nature 1.jpg");
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  margin: 15px auto;
+  padding: 150px 0px;
+}
+
+
+.serviceTitle01{
+  font-size: 48px;
+  font-weight: 400;
+
+}
+
+.serviceTitle02{
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.serviceText{
+  font-size: 24px;
+  margin-top: 55px;
+}
+
+.service02{
+  width: 100%;
+  background-image: url("../img/room 1.jpg");
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  margin: 15px auto;
+  padding: 150px 0px;
+}
+
+.service03{
+  width: 100%;
+  background-image: url("../img/food 1.jpg");
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  margin: 15px auto;
+  padding: 150px 0px;
+}
+
+.service04{
+  width: 100%;
+  background-image: url("../img/onsen 1.jpg");
+  background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  margin: 15px auto;
+  padding: 150px 0px;
+}
+
+.map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 37.96%;    /*16:9の比率にしたい場合、9/16=56.25%*/
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mapButtonBox{
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+  justify-content: center
+}
+
+
+.mapButton01{
+  background-color:#a8a7a7 ;
+  padding: 20px 55px;
+  font-size: 13.5px;
+  color: #fff;
+
+}
+
+.mapButton02{
+  background-color:#222 ;
+  padding: 20px 55px;
+  font-size: 13.5px;
+  color: #fff;
+  margin-left: 20px ;
+
+}
+
+#footer {
+  width: 1050px;
+  align-items: center;
+  padding: 0px auto;
+  margin: 150px auto 0px auto;
+  text-align: center;
+
+}
+
+
+.footerWrap01{
+  display: flex;
+  align-items: center;
+}
+
+.fooerImage{
+  width: 590px;
+  
+}
+
+
+
+.imageTextBox03{
+  width: 262px;
+  margin-left: 200px;
+
+}
+
+
+.footerLogo{
+   width: 230px;
+}
+
+.footerInfomersion{
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.footerNavigation{
+  margin-top: 100px;
+}
+
+.footerNavigation ul{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.footerNavigation li+li{
+  border-left: 2px solid #ccc; /* 区切り線 */
+}
+
+.footerNavigation a{
+  display: block;
+  padding: 0 50px;
+  border-right: none;
+  text-decoration: none;
+  color: #333;
+}
+
+.footerBannerBox{
+  display: flex;
+  gap: 20px;
+  height: 50px;
+  margin-top: 55px;
+
+}
+
+.copyRight{
+  margin-top: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
